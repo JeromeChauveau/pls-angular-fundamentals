@@ -28,7 +28,20 @@ Simplification:
 Q : diff between `npm start` & `ng serve`?
 
 ## bootstrap
-In angular.js, pointeur vers main.ts ("main": "src/main.ts").
+In angular.json, pointeur vers main.ts ("main": "src/main.ts").
 In main.ts : 
 `platformBrowserDynamic().bootstrapModule(AppModule)` --> shows that application is bootstrap with AppModule.
+
+Q : webpack ?
+note : angular.json = webpack config, so when it changes one needs to restart server
+
+## modules
+Module declaration file:
+ - imports : allows to import other modules to have acess to their services etc..
+ - Q : why are components and services declared in two different properties? (declarations and providers)
+ - bootstrap: ?
+ 
+ ## Using static assets
+ Source folders are defined in angular.json file : "assets" : [] for images, "styles" for css, "scripts" for js
+ 
 
